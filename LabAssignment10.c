@@ -127,8 +127,11 @@ int main(void)
 {
     char* inWords[256];
 
+    // Change the file path to the location of your dictionary file
+    char* filepath = "C:\Users\chris\Dropbox\PC\Downloads\dictionary.txt";
+
     // read the number of words in the dictionary
-    int numWords = readDictionary("dictionary.txt", inWords);
+    int numWords = readDictionary(filepath, inWords);
     for (int i = 0; i < numWords; ++i)
     {
         printf("%s\n", inWords[i]);
@@ -159,3 +162,4 @@ int main(void)
 
     return 0;
 }
+
